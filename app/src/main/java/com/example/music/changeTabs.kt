@@ -56,6 +56,7 @@ object changeTabs{
             songBtn.setImageResource(R.drawable.ic_music_note_black_24dp)
             artistBtn.setImageResource(R.drawable.ic_account_box_black)
             searchBtn.setImageResource(R.drawable.ic_search_pink)
+
         }
 
     }
