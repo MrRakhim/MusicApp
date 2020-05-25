@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65sp"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:background="@drawable/image_little"
+            android:id="@+id/video_image_little"
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5sp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_account_circle_black_24dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_marginStart="10sp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:id="@+id/video_name_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:textSize="14sp"
+                tools:text="911 - Single" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginStart="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@drawable/line_border"/>
+</LinearLayout>

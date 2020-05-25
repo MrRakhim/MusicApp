@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_marginStart="20sp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:id="@+id/song_number_little"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/border"
+                android:textSize="14sp"
+                tools:text="1" />
+            <TextView
+                android:id="@+id/song_name_little"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20sp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                tools:text="Title" />
+        </LinearLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="20sp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginStart="200sp"-->
+<!--            >-->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:contentDescription="@string/todo"-->
+<!--                android:src="@drawable/ic_chevron_right_black_24dp"-->
+<!--                android:foregroundGravity="right"/>-->
+<!--        </LinearLayout>-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginStart="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@drawable/line_border"/>
+</LinearLayout>

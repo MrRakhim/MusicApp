@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.ArtistActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="90sp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/artist_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="300sp"
+                    android:maxHeight="600sp"
+                    android:src="@drawable/ic_account_box_black_24dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:id="@+id/artist_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="-60dp"
+                    android:text="Loading..."
+                    android:textColor="@color/colorAccent"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#56E1EBED"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginTop="20sp"
+                    android:text="About"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ru.embersoft.expandabletextview.ExpandableTextView
+                    android:id="@+id/artist_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginLeft="20sp"
+                    app:etv_animationTime="10"
+                    app:etv_expandLines="3"
+                    app:etv_showLine="true"
+                    app:etv_textContentSize="16sp"
+                    app:etv_textExpand="ещё"
+                    app:etv_textShrink="меньше"
+                    app:etv_textContentColor="@android:color/black"
+                    app:etv_textStateColor="@color/colorAccent"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    />
+                <TextView
+                    android:id="@+id/artist_birthdate"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:text="birthdate"
+                    />
+                <TextView
+                    android:id="@+id/artist_genre"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:text="Genre"
+                    />
+                <TextView
+                    android:id="@+id/artist_website"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginVertical="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:text="Website"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:background="#56E1EBED"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginBottom="10sp"
+                    android:text="Music Videos"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:background="@drawable/border"
+                    android:id="@+id/artistAC_video_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_nav"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageButton
+            android:id="@+id/nav_album_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="5dp"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:src="@drawable/ic_library_music_black_24dp"
+            android:contentDescription="@string/todo" />
+
+
+        <ImageButton
+            android:id="@+id/nav_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginVertical="5dp"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:src="@drawable/ic_search_black_24dp"
+            android:contentDescription="@string/todo" />
+    </LinearLayout>
+</RelativeLayout>

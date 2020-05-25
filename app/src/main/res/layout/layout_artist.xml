@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65sp"
+        android:gravity="start"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left">
+
+            <ImageView
+                android:background="@drawable/image_little"
+                android:id="@+id/artist_image_little"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20sp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_account_circle_black_24dp" />
+
+            <TextView
+                android:id="@+id/artist_name_little"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30sp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                tools:text="Title" />
+        </LinearLayout>
+<!--        android:layout_marginLeft="230sp"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/artist_like_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20sp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_add_black_24dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginStart="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@drawable/line_border"/>
+</LinearLayout>
